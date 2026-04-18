@@ -1,0 +1,17 @@
+{
+  "name": "@aqua-lab/physics-engine",
+  "version": "0.1.0",
+  "description": "Publishable liquid physics library workspace.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc src/index.ts --declaration --module ESNext --moduleResolution Bundler --target ES2020 --outDir dist",
+    "lint": "eslint \"src/**/*.ts\"",
+    "typecheck": "tsc src/index.ts --noEmit --strict --noImplicitAny --strictNullChecks --module ESNext --moduleResolution Bundler --target ES2020",
+    "test": "echo \"No tests configured for physics-engine\""
+  }
+}

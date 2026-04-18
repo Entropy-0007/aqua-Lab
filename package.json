@@ -1,0 +1,27 @@
+{
+  "name": "aqua-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Monorepo scaffold for the Aqua Lab 3D virtual chemistry simulator.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "dev": "turbo run dev --filter=@aqua-lab/simulator",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
+    "eslint": "8.57.1",
+    "husky": "9.1.6",
+    "prettier": "3.3.3",
+    "turbo": "1.13.4",
+    "typescript": "5.6.3"
+  }
+}

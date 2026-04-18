@@ -1,0 +1,10 @@
+﻿# /**
+#  * Ignores generated files and local machine artifacts for Aqua Lab.
+#  */
+node_modules
+dist
+.env
+*.local
+.DS_Store
+coverage
+.turbo

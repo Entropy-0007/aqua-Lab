@@ -1,0 +1,7 @@
+﻿# /**
+#  * Defines shared formatting conventions for the Aqua Lab monorepo.
+#  */
+singleQuote: true
+trailingComma: all
+printWidth: 100
+tabWidth: 2
