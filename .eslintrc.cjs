@@ -18,7 +18,14 @@ module.exports = {
   ignorePatterns: ['dist', 'node_modules', 'coverage'],
   rules: {
     'no-console': 'warn',
-    'no-unused-vars': 'error',
-    '@typescript-eslint/explicit-function-return-type': 'warn',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': [
+      'warn',
+      {
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+      },
+    ],
+   '@typescript-eslint/explicit-function-return-type': 'warn',
   },
 };
