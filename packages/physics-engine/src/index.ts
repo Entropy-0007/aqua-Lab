@@ -1,4 +1,11 @@
-﻿/**
- * Public entry point placeholder for the physics engine package.
+/**
+ * Re-exports the complete public API surface for the standalone liquid physics engine.
  */
-export {};
+
+export * from './@types';
+export * from './bubble';
+export * from './droplet';
+export * from './flow';
+export * from './mixing';
+export * from './surface';
+
